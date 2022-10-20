@@ -50,7 +50,11 @@ body {
 }
 
 #sign-in,
-#play-to-win {
+#join-now,
+#play-to-win,
+#link-accounts,
+#order-now,
+#learn-more {
   background-color: transparent;
   padding: 8px 16px;
   border-radius: 20px;
@@ -58,17 +62,12 @@ body {
   font-weight: bold;
   font-size: 0.8rem;
   letter-spacing: 0.5px;
+  cursor: pointer;
 }
 
-#join-now {
-  background-color: black;
-  color: white;
-  padding: 8px 16px;
-  border-radius: 20px;
-  border: 1px solid black;
-  font-weight: bold;
-  font-size: 0.8rem;
-  letter-spacing: 0.5px;
+button:hover {
+  opacity: 0.5;
+  transition: 0.2s;
 }
 
 .find-a-store {
@@ -172,6 +171,19 @@ footer {
   font-size: 0.9rem;
 }
 
+.footer-links a {
+  padding: 8px 0;
+  margin: 0 0 8px;
+  color: gray;
+  font-size: 0.9rem;
+  text-decoration: none;
+  display: flex;
+}
+
+.footer-links a:hover {
+  color: black;
+}
+
 hr {
   width: 90%;
   border: 0;
@@ -182,13 +194,27 @@ hr {
   margin-bottom: 32px;
 }
 
+.social-links svg {
+  padding-right: 15px;
+}
+
 .terms-links {
   display: flex;
+  margin-top: 16px;
 }
 
 .terms-links a {
   text-decoration: none;
   color: black;
+}
+
+.terms-links a:hover {
+  text-decoration: underline;
+}
+
+.footer-bot {
+  margin-left: 40px;
+  margin-right: 40px;
 }
 
 .copyright {
